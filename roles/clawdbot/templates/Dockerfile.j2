@@ -9,7 +9,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # Install pnpm and Clawdbot as root
+ENV PNPM_HOME="/usr/local/bin"
 RUN npm install -g pnpm && \
+    pnpm config set global-bin-dir /usr/local/bin && \
     pnpm install -g @clawdbot/clawdbot
 
 # Create user and directories
