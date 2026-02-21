@@ -72,7 +72,7 @@ cd "$TEMP_DIR"
 
 # For simplicity, we'll clone the entire repo
 echo "Cloning repository..."
-git clone https://github.com/openclaw/openclaw-ansible.git
+git clone https://github.com/ryanbastic/openclaw-ansible.git
 cd openclaw-ansible
 
 echo -e "${GREEN}✓ Playbook downloaded${NC}"
