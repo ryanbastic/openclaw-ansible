@@ -12,7 +12,7 @@ if [ -z "$COLORTERM" ]; then
     export COLORTERM=truecolor
 fi
 
-REPO_URL="https://raw.githubusercontent.com/openclaw/openclaw-ansible/main"
+REPO_URL="https://raw.githubusercontent.com/ryanbastic/openclaw-ansible/main"
 PLAYBOOK_URL="${REPO_URL}/playbook.yml"
 TEMP_DIR=$(mktemp -d)
 
