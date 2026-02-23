@@ -5,8 +5,8 @@
   ansible.builtin.shell:
     # cmd: pnpm install -g openclaw@2026.2.15 # WORKS FOR IRC
     # cmd: pnpm install -g openclaw@2026.2.17 # https://github.com/openclaw/openclaw/issues/21154
-    # cmd: pnpm install -g openclaw@latest # latest version
-    cmd: pnpm install -g openclaw@2026.2.21-2 # confirmed working with current setup logic
+    cmd: pnpm install -g openclaw@latest # latest version
+    # cmd: pnpm install -g openclaw@2026.2.21-2 # confirmed working with current setup logic
     executable: /bin/bash
   become: true
   become_user: "{{ openclaw_user }}"
